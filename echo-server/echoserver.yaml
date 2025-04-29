@@ -14,7 +14,7 @@ spec:
         app: echoserver
     spec:
       containers:
-      - image: k8s.gcr.io/e2e-test-images/echoserver:2.5
+      - image: ghcr.io/ricoberger/echoserver:latest
         imagePullPolicy: Always
         name: echoserver
         ports:
