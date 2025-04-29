@@ -14,7 +14,7 @@ spec:
         app: echoserver
     spec:
       containers:
-      - image: ghcr.io/ricoberger/echoserver:latest
+      - image: 395364994606.dkr.ecr.eu-west-1.amazonaws.com/echoserver:latest
         imagePullPolicy: Always
         name: echoserver
         ports:
