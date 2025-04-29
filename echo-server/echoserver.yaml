@@ -43,7 +43,7 @@ metadata:
   namespace: echoserver
   annotations:
     alb.ingress.kubernetes.io/scheme: internet-facing
-    alb.ingress.kubernetes.io/subnets: subnet-0a03dca683cc118a6, subnet-0b92d9448147b05e8
+    alb.ingress.kubernetes.io/subnets: subnet-00e7e732c9b48a84f, subnet-00efaa0cda7a100e2
 spec:
   ingressClassName: alb
   rules:
