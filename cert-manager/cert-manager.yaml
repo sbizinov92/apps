@@ -5326,6 +5326,11 @@ spec:
         app.kubernetes.io/component: "cainjector"
         app.kubernetes.io/version: "v1.12.3"
     spec:
+      tolerations:
+        - key: "dedicated"
+          operator: "Equal"
+          value: "system"
+          effect: "NoSchedule"
       serviceAccountName: cert-manager-cainjector
       securityContext:
         runAsNonRoot: true
@@ -5350,6 +5355,7 @@ spec:
               - ALL
       nodeSelector:
         kubernetes.io/os: linux
+
 ---
 # Source: cert-manager/templates/deployment.yaml
 apiVersion: apps/v1
