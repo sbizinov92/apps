@@ -6,8 +6,8 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/sbizinov92/apps.git
-    path: echo-server
+    repoURL: https://github.com/sbizinov92/echoserver.git
+    path: charts/echoserver
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
