@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/cryptopay-dev/k8s
+    repoURL: https://github.com/sbizinov92/apps.git
     path: aws-load-balancer-controller
     targetRevision: HEAD
   destination:

@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: git@github.com:cryptopay-dev/k8s.git
+    repoURL: https://github.com/sbizinov92/apps.git
     path: cert-manager
     targetRevision: HEAD
   destination:
