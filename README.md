@@ -6,9 +6,6 @@ This repository defines a set of ArgoCD `Application` manifests used to bootstra
 
 > - Some repositories (such as `apps`) were manually added via the ArgoCD UI. The GitHub App integration is configured for this repository.
 > - During the initial bootstrap, a small amount of manual setup ("click ops") was used to configure ArgoCD access and apply these application manifests. This was intentional to avoid circular dependencies during the first deployment (e.g., cert-manager, ingress, ArgoCD itself).
-> - **Note:** The `cert-manager` and `aws-load-balancer-controller` applications currently do not include node selectors or tolerations. As a result, their pods may be scheduled on unintended nodes if you are using node pools with taints and roles (e.g., system vs. application separation).
-
-
 ---
 
 ## 📦 Applications
